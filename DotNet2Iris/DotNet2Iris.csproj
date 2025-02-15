@@ -35,13 +35,13 @@
   <ItemGroup>
     <Reference Include="InterSystems.Data.IRISClient, Version=4.0.1.0, Culture=neutral, PublicKeyToken=ad350a26c4a4447c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\InterSystems\HealthConnect\dev\dotnet\bin\v4.5\InterSystems.Data.IRISClient.dll</HintPath>
+      <HintPath>..\externals\dotnet\bin\v4.5\InterSystems.Data.IRISClient.dll</HintPath>
     </Reference>
     <Reference Include="InterSystems.Data.Utils">
-      <HintPath>C:\InterSystems\HealthConnect\dev\dotnet\bin\v4.5\InterSystems.Data.Utils.dll</HintPath>
+      <HintPath>..\externals\dotnet\bin\v4.5\InterSystems.Data.Utils.dll</HintPath>
     </Reference>
     <Reference Include="InterSystems.Data.XEP">
-      <HintPath>C:\InterSystems\HealthConnect\dev\dotnet\bin\v4.5\InterSystems.Data.XEP.dll</HintPath>
+      <HintPath>..\externals\dotnet\bin\v4.5\InterSystems.Data.XEP.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -61,6 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleLibrary\SampleLibrary.csproj">
+      <Project>{4bc81134-dba3-4147-8e8a-d24ea4ba7ccb}</Project>
+      <Name>SampleLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

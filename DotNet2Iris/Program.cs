@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Configuration;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace DotNet2Iris
 {
@@ -28,6 +29,9 @@ namespace DotNet2Iris
                         break;
                     case "3":
                         p.TestTemperatureConverter();
+                        break;
+                    case "4":
+                        p.TestCsharpTemperatureConverter();
                         break;
                     case "X":
                         exit = true;
@@ -96,8 +100,9 @@ namespace DotNet2Iris
             Console.Clear();
             ShowConfig();
             Console.WriteLine("1 - Change connection configuration");
-            Console.WriteLine("2 - Test: Get namespace");
-            Console.WriteLine("3 - Test: Temperature converter");
+            Console.WriteLine("2 - Test: [IRIS] Get namespace");
+            Console.WriteLine("3 - Test: [IRIS] Temperature converter");
+            Console.WriteLine("4 - Test: [C#] Temperature converter");
             Console.WriteLine();
             Console.WriteLine("X - Exit");
         }
@@ -133,6 +138,7 @@ namespace DotNet2Iris
         private void TestTemperatureConverter()
         {
             Test test = new Test(irisParam);
+            Console.WriteLine("Test IRIS Temperature Converter");
             Console.WriteLine();
             Console.WriteLine("Convert 30ºC to Fahrenheit and Kelvin: ");
             Console.WriteLine(test.ConvertTemperature(30.0,"C","F") + "º F");
@@ -149,6 +155,29 @@ namespace DotNet2Iris
             Console.WriteLine("Press a key to continue");
             Console.ReadKey();
         }
+
+        private void TestCsharpTemperatureConverter()
+        {
+            SampleLibrary.Conversion test = new SampleLibrary.Conversion();
+
+            Console.WriteLine("Test C# Temperature Converter");
+            Console.WriteLine();
+            Console.WriteLine("Convert 30ºC to Fahrenheit and Kelvin: ");
+            Console.WriteLine(test.ConvertTemperature(30.0, "C", "F") + "º F");
+            Console.WriteLine(test.ConvertTemperature(30.0, "C", "K") + "º K");
+            Console.WriteLine();
+            Console.WriteLine("Convert 30ºF to Celisus and Kelvin");
+            Console.WriteLine(test.ConvertTemperature(30.0, "F", "C") + "º C");
+            Console.WriteLine(test.ConvertTemperature(30.0, "F", "K") + "º K");
+            Console.WriteLine();
+            Console.WriteLine("Convert 30ºK to Celisus and Fahrenheit");
+            Console.WriteLine(test.ConvertTemperature(30.0, "K", "C") + "º C");
+            Console.WriteLine(test.ConvertTemperature(30.0, "K", "F") + "º F");
+            Console.WriteLine();
+            Console.WriteLine("Press a key to continue");
+            Console.ReadKey();
+        }
+
         #endregion
     }
 }

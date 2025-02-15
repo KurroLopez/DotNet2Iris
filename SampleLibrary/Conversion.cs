@@ -8,7 +8,7 @@ namespace SampleLibrary
 {
     public class Conversion
     {
-        public decimal ConvertTemperature(decimal temperature, string from = "C", string to = "F")
+        public double ConvertTemperature(double temperature, string from = "C", string to = "F")
         {
             from = from.Substring(0, 1).ToUpper();
             to = to.Substring(0, 1).ToUpper();
@@ -26,11 +26,11 @@ namespace SampleLibrary
             switch (from)
             {
                 case "C":
-                    return to == "F" ? temperature * 9 / 5 + 32 : temperature + 273.15m;
+                    return to == "F" ? temperature * 9 / 5 + 32 : temperature + 273.15;
                 case "F":
-                    return to == "C" ? (temperature - 32) * 5 / 9 : (temperature + 459.67m) * 5 / 9;
+                    return to == "C" ? (temperature - 32) * 5 / 9 : (temperature + 459.67) * 5 / 9;
                 case "K":
-                    return to == "C" ? temperature - 273.15m : temperature * 9 / 5 - 459.67m;
+                    return to == "C" ? temperature - 273.15 : temperature * 9 / 5 - 459.67;
                 default:
                     throw new ArgumentException("Invalid temperature scale. Use 'C', 'F', or 'K'.");
             }
