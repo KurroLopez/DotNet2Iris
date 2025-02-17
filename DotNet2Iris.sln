@@ -26,6 +26,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v4.5", "v4.5", "{5660FD29-A
 		Externals\dotnet\bin\v4.5\Newtonsoft.Json.dll = Externals\dotnet\bin\v4.5\Newtonsoft.Json.dll
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v4.6.2", "v4.6.2", "{4BFE7744-2636-4BE9-BC67-0569CAD75BD6}"
+	ProjectSection(SolutionItems) = preProject
+		Externals\dotnet\bin\v4.6.2\dotnet_generator.exe = Externals\dotnet\bin\v4.6.2\dotnet_generator.exe
+		Externals\dotnet\bin\v4.6.2\InterSystems.Data.Bindings.dll = Externals\dotnet\bin\v4.6.2\InterSystems.Data.Bindings.dll
+		Externals\dotnet\bin\v4.6.2\InterSystems.Data.Bindings.xml = Externals\dotnet\bin\v4.6.2\InterSystems.Data.Bindings.xml
+		Externals\dotnet\bin\v4.6.2\InterSystems.Data.Gateway.exe = Externals\dotnet\bin\v4.6.2\InterSystems.Data.Gateway.exe
+		Externals\dotnet\bin\v4.6.2\InterSystems.Data.Gateway.xml = Externals\dotnet\bin\v4.6.2\InterSystems.Data.Gateway.xml
+		Externals\dotnet\bin\v4.6.2\InterSystems.Data.Gateway64.exe = Externals\dotnet\bin\v4.6.2\InterSystems.Data.Gateway64.exe
+		Externals\dotnet\bin\v4.6.2\InterSystems.Data.IRISClient.dll = Externals\dotnet\bin\v4.6.2\InterSystems.Data.IRISClient.dll
+		Externals\dotnet\bin\v4.6.2\InterSystems.Data.IRISClient.xml = Externals\dotnet\bin\v4.6.2\InterSystems.Data.IRISClient.xml
+		Externals\dotnet\bin\v4.6.2\InterSystems.Data.Utils.dll = Externals\dotnet\bin\v4.6.2\InterSystems.Data.Utils.dll
+		Externals\dotnet\bin\v4.6.2\InterSystems.Data.Utils.xml = Externals\dotnet\bin\v4.6.2\InterSystems.Data.Utils.xml
+		Externals\dotnet\bin\v4.6.2\InterSystems.Data.XEP.dll = Externals\dotnet\bin\v4.6.2\InterSystems.Data.XEP.dll
+		Externals\dotnet\bin\v4.6.2\InterSystems.Data.XEP.xml = Externals\dotnet\bin\v4.6.2\InterSystems.Data.XEP.xml
+		Externals\dotnet\bin\v4.6.2\IRISNetWizard.exe = Externals\dotnet\bin\v4.6.2\IRISNetWizard.exe
+		Externals\dotnet\bin\v4.6.2\Newtonsoft.Json.dll = Externals\dotnet\bin\v4.6.2\Newtonsoft.Json.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +66,6 @@ Global
 		{03E94B88-CB1C-4152-A8B3-CAF06841EBBB} = {DB344ABC-40AC-4B54-B5C6-6A74D4EABE30}
 		{29416964-694E-415D-95F7-0892058FA190} = {03E94B88-CB1C-4152-A8B3-CAF06841EBBB}
 		{5660FD29-A027-4A03-B065-0DC773F5843A} = {29416964-694E-415D-95F7-0892058FA190}
+		{4BFE7744-2636-4BE9-BC67-0569CAD75BD6} = {29416964-694E-415D-95F7-0892058FA190}
 	EndGlobalSection
 EndGlobal

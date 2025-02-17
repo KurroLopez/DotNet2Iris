@@ -25,3 +25,6 @@ bld/
 # Visual Studio 2015 cache/options directory
 .vs/
 !Externals/*
+/SampleLibrary/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/DotNet2Iris/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/DotNet2Iris/obj/Debug/DotNet2Iris.csproj.AssemblyReference.cache
